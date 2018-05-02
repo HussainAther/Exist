@@ -21,6 +21,7 @@ z = anxiety["value"]
 mu = 8000
 sigma = 3000
 x_axis = np.arange(min(x), max(x), 1000)
+s = max(y)
 
 # Label the plot
 fig = plt.figure(1)
@@ -33,7 +34,7 @@ plt.scatter(x, y)
 #plt.plot(x, w(x), "b")
 
 # Plot the normal distribution
-plt.plot(x_axis, norm.pdf(x_axis,mu,sigma))
+plt.plot(x_axis, norm.pdf([x_axis,mu,sigma], scale=s))
 
 # Add a legend, save, and close
 handles, labels = plt.gca().get_legend_handles_labels()
@@ -59,7 +60,7 @@ for index, value in enumerate(x):
 
 # Plot the normal distribution
 #plt.plot(x, w(x), "b")
-plt.plot(x_axis, norm.pdf(x_axis,mu,sigma))
+plt.plot(x_axis, norm.pdf([x_axis,mu,sigma], scale=s))
 
 # Add a legend, save, and close
 handles, labels = plt.gca().get_legend_handles_labels()
