@@ -34,7 +34,7 @@ plt.scatter(x, y)
 #plt.plot(x, w(x), "b")
 
 # Plot the normal distribution
-plt.plot(x_axis, norm.pdf([x_axis,mu,sigma], scale=s))
+# plt.plot(x_axis, norm.pdf([x_axis,mu,sigma], scale=s))
 
 # Add a legend, save, and close
 handles, labels = plt.gca().get_legend_handles_labels()
@@ -59,8 +59,8 @@ for index, value in enumerate(x):
         plt.scatter(value, y.iloc[index], c="b", label="Anxiety not tagged")
 
 # Plot the normal distribution
-#plt.plot(x, w(x), "b")
-plt.plot(x_axis, norm.pdf([x_axis,mu,sigma], scale=s))
+# plt.plot(x, w(x), "b")
+# plt.plot(x_axis, norm.pdf([x_axis,mu,sigma], scale=s))
 
 # Add a legend, save, and close
 handles, labels = plt.gca().get_legend_handles_labels()
