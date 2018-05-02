@@ -15,7 +15,7 @@ z = anxiety["value"]
 #pearR = np.corrcoef(x,y)[1,0]
 
 w = np.poly1d(np.polyfit(x, y, 3))
-xp = np.linspace(0, 10, 28)
+xp = np.linspace(0, 10, len(x))
 
 fig = plt.figure(1)
 plt.title("Minutes of productivity vs. km walked")
