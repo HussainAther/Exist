@@ -5,10 +5,12 @@ import numpy as np
 import pandas as pd
 from scipy.stats import norm
 
+# Read the data
 productive_min = pd.DataFrame.from_csv("../csv/productive_min.csv", index_col="date")
 steps = pd.DataFrame.from_csv("../csv/steps_daily.csv", index_col="date")
 anxiety = pd.DataFrame.from_csv("../csv/anxiety.csv", index_col="date")
 
+# Create the variables from the DataFrame that will be plotted
 x = steps["value"]
 y = productive_min["value"]
 z = anxiety["value"]
