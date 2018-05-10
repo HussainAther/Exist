@@ -29,7 +29,7 @@ for i in depression["value"]:
         depression_labels.append("")
 
 # Create a dictionary of mood colors
-mood_dict = {1: "#e50000", 2: "#f97306", 3: "#ffff14", 4: "#15b01a", 5 : "#0343df"}
+mood_dict = {1: "#e50000", 2: "#f97306", 3: "#FFD700", 4: "#15b01a", 5 : "#0343df"}
 
 # Plot the figure of productivity over time with days of depression and mood colors.
 fig = plt.figure()
